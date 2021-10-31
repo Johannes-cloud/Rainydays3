@@ -1,0 +1,183 @@
+body {
+  background: rgb(255, 255, 255);
+  min-height: 100vh;
+  color: black;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  overflow: hidden;
+  background: white;
+  color: black;
+  height: 70px;
+  width: 1000px;
+  line-height: 70px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+a {
+  font-size: 1.2em;
+  color: black;
+  text-decoration: none;
+}
+
+.cart {
+  display: none;
+  font-size: 1.2em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.fall {
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  background-color: rgb(149, 155, 185);
+}
+
+.pitch {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: inherit;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: inherit;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.forest {
+  width: 100%;
+}
+
+footer {
+  background: black;
+  color: gray;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  position: bottom;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.container .card {
+  width: 100%;
+  align-content: center;
+}
+
+.container .card .imgBx {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+}
+
+.container .card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover .imgBx img {
+  transform:scale(1.5)
+}
+
+.content {
+  text-align: center;
+  height: 150px;
+}
+
+button {
+  background-color:#1029b3;
+	border-radius:28px;
+	border:1px solid #183aab;
+	display:inline-block;
+	cursor:pointer;
+	color: white;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+button:hover {
+	background-color:#2a52bf;
+  transition: ease-in-out 0.5s ;
+}
+
+form {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 400px;
+}
+
+textarea {
+  background-color: white;
+  color: white;
+}
+
+.about_us {
+  width: 100%;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav img {display: none;}
+}
