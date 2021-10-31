@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Rainydays</title>
+    <link href="/Styles/styles.css" rel="stylesheet">
+     <!-- Hotjar Tracking Code for https://dreamy-wiles-eed546.netlify.app -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2607828,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body>
+  <nav>
+    <ul class="topnav">
+      <img src="/Images/logo.png" alt="Logo">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="store.html">Store</a></li>
+      <li><a href="About us.html">About us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+  <h1>Contact</h1>
+  <main>
+    <form id="contactForm">
+      <div>
+        <label>
+          Full name (required)
+          <input name="fullName" id="fullName" size="50" >
+        </label>
+        <div class="form-error" id="fullNameError">Please enter your full name</div>
+      </div>
+      <div>
+        <label>
+          Email (required)
+          <input name="email" id="email" size="50" >
+        </label>
+        <div class="form-error" id="emailError">Please enter a valid email address</div>
+      </div>
+      <div>
+        <label>
+          Address (required)
+          <input id="address" type="text" name="address" size="50">
+        </label>
+        <div class="form-error" id="addressError">Please enter a valid address</div>
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+      </form>
+  </main>
+  <script src = "/JS/contact.js"></script>
+</body>
+</html>
